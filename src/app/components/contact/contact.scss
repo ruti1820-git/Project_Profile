@@ -1,0 +1,69 @@
+.contact-container {
+  background-color: #0a0a0c; // צבע הרקע הכהה מאוד
+  color: white;
+  padding: 80px 10%;
+  
+  h1 { font-size: 3rem; margin-bottom: 10px; }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin-top: 50px;
+  }
+
+  // עיצוב כרטיסי המידע (אימייל וטלפון)
+  .contact-item {
+    background: #11151c; // צבע הכרטיס הכהה
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #1f2533;
+  }
+
+  // עיצוב כפתורי הרשתות החברתיות
+  .socials {
+    display: flex;
+    gap: 15px;
+    button {
+      background: #11151c;
+      color: white;
+      border: 1px solid #1f2533;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  // עיצוב הטופס
+  .contact-form {
+    background: #11151c;
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    
+    input, textarea {
+      background: #0a0a0c;
+      border: 1px solid #1f2533;
+      color: white;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    button[type="submit"] {
+      background: linear-gradient(90deg, #64ffda, #4db6ac);
+      border: none;
+      padding: 15px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}

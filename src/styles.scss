@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+/* src/styles.scss */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #050510; // זה מה שצובע את כל האתר בשחור
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}

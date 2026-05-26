@@ -1,0 +1,20 @@
+<section class="projects-container">
+  <h1>My Projects</h1>
+  <p>A curated collection of my work — featuring source code, live demos, and screenshots</p>
+
+  <div class="grid">
+    <div class="card" *ngFor="let p of projects">
+      <img [src]="p.image" [alt]="p.title">
+      <h3>{{ p.title }} — <span>{{ p.subtitle }}</span></h3>
+      <p>{{ p.description }}</p>
+      
+      <div class="tech-tags">
+        <span *ngFor="let t of p.tech">{{ t }}</span>
+      </div>
+
+      <button mat-stroked-button (click)="openLink(p.githubLink)">
+        Source Code
+      </button>
+    </div>
+  </div>
+</section>

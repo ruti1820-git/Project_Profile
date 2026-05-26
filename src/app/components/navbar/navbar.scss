@@ -1,0 +1,52 @@
+.navbar {
+  background-color: #0a0a0c !important;
+  color: #ccd6f6;
+  padding: 0 50px;
+  
+  // הוספת flex-direction ו-justify-content כדי לוודא שזה מימין לשמאל
+  display: flex;
+  justify-content: flex-end; // זה הפקודה החשובה ביותר שדוחפת הכל לימין
+  align-items: center;
+
+  .spacer {
+    display: none; // בשיטה הזו אין צורך ב-spacer
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+
+    button {
+      font-size: 1rem;
+      text-transform: capitalize;
+      
+      &:hover {
+        color: #64ffda;
+      }
+    }
+  }
+}
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  // המסגרת החיצונית הבהירה
+  width: 50px; 
+  height: 50px;
+  background-color: #f8f1f1; // צבע הרקע העגול הגדול
+  border-radius: 50%;
+  padding: 10px; // יוצר את המרווח למסגרת
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); // צל עדין
+  position: absolute;
+top: 20px;
+left: 20px;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid white; // המסגרת הפנימית של התמונה
+}
