@@ -9,12 +9,12 @@ import { RouterModule } from '@angular/router';
   styleUrl: './home.scss',
 })
 export class Home {
-  name = 'Talya Toledano';
+  name = 'Rut Kav';
   title = 'Software Engineer | Full Stack Developer';
   description = `Results-driven Full Stack Developer with strong analytical thinking and a proven ability to rapidly acquire new technologies. Experienced in building end-to-end web systems while leveraging AI tools to streamline workflows and enhance performance. A collaborative team player who thrives in dynamic, high-pressure environments, delivering clean, maintainable code that meets the highest professional standards.`;
   
   codeSnippet = `const developer = {
-  name: "Talya Toledano",
+  name: "Rut Kav",
   role: "Full Stack Developer",
   expertise: [
     "React", 
